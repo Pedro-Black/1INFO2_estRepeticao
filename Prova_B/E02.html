@@ -8,11 +8,14 @@
     */
 
     //Entrada
-
-
+    let pessoas = 0;
+    let quantidadeVendida = 0;
     //Processamento
-
+    for(pessoas = 0; quantidadeVendida < 25; pessoas++){
+        let kiloscomprados = parseInt(prompt(`Quantos Kg de tomates a pessoa ${pessoas} comprou?`))
+        quantidadeVendida = quantidadeVendida + kiloscomprados;
+    }
 
     //Saída
-    
+    document.write(`Quantidade vendida:${quantidadeVendida} KG</br>Quantidade de pessoas que compraram:${pessoas}`)
 </script>
